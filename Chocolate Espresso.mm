@@ -1,5 +1,3 @@
 int main() {
-    @autoreleasepool {
-        NSLog(@"Chocolate Espresso");
-    }
+    NSLog(@"Chocolate Espresso");
 }
