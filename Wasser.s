@@ -1,3 +1,4 @@
+# Die Grundlage für jedes Getränk
 section .data
 msg     db      'Heisses Wasser!', 0AH
 len     equ     $-msg
