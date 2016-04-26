@@ -3,5 +3,5 @@
 // Kaffee, einfach Kaffee
 void main()
 {
-  printf("Kaffee\n");
+  printf("Kaffee - 0,80€\n");
 }

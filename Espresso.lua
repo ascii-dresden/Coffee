@@ -1,2 +1,2 @@
 -- Original Espresso
-print("Espresso")
+print("Espresso - 0,80€")

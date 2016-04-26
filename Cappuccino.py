@@ -1,3 +1,3 @@
 # Solide, verbreitet, gut
 # ein echter Klassiker
-print("Cappuccino")
+print("Cappuccino - 1,00€")

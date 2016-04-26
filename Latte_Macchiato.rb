@@ -1,3 +1,3 @@
 # freundlich, sieht gut aus
 # ein bisschen so wie das ascii
-puts "Latte Macchiato"
+puts "Latte Macchiato - 1,00€"

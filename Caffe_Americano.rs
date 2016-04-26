@@ -2,5 +2,5 @@
 /// Stark, mächtig, sicher,
 /// eine echte Alternative zu C++
 fn main() {
-    println!("Caffè Americano");
+    println!("Caffè Americano - 0,80€");
 }

@@ -1,2 +1,2 @@
 # Kakao, macht nicht Wach, aber dick
-echo Chocolate
+echo Chocolate - 1,00€

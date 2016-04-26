@@ -1,2 +1,2 @@
 # Cappuccino mit Kakao
-print "Chococcino\n"
+print "Chococcino - 1,00€\n"
