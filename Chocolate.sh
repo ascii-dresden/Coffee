@@ -1,2 +1,2 @@
-# Kakau, macht nicht Wach, aber dick
+# Kakao, macht nicht Wach, aber dick
 echo Chocolate
