@@ -19,6 +19,7 @@ run_swift = swift $(1)
 run_hs    = runhaskell $(1)
 run_julia = julia $(1)
 run_ss    = tinyscheme $(1)
+run_c     = gcc $(1) -o $(2) && ./$(2)
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
