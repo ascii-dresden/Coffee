@@ -7,6 +7,7 @@ TARGETS   = $(basename $(SOURCES))
 run_sh    = bash $(1)
 run_bas   = echo quit | bwbasic $(1) | sed '5p;d'
 run_rb    = ruby $(1)
+run_cpp   = g++ $(1) -o $(2) && ./$(2)
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
@@ -19,9 +20,9 @@ $(basename $(1)): $(1)
 	@ echo
 	@ cat -n $(1)
 	@ echo
-	@ echo "     $$$$  $$(call run_$$(ext),$(1))"
+	@ echo "     $$$$  $$(call run_$$(ext),$(1),$(basename $(1)))"
 	@ echo
-	@ $$(call run_$$(ext),$(1))
+	@ $$(call run_$$(ext),$(1),$(basename $(1)))
 	@ echo
 endif
 endef
