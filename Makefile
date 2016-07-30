@@ -8,6 +8,7 @@ run_sh    = bash $(1)
 run_bas   = echo quit | bwbasic $(1) | sed '5p;d'
 run_rb    = ruby $(1)
 run_cpp   = g++ $(1) -o $(2) && ./$(2)
+run_rs    = rustc $(1) && ./$(2)
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
@@ -28,6 +29,7 @@ endif
 endef
 
 .PHONY: all
+.PHONY: $(TARGETS)
 
 all: $(TARGETS)
 
