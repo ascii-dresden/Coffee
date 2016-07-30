@@ -17,6 +17,7 @@ run_js    = node $(1)
 run_pl    = perl $(1)
 run_swift = swift $(1)
 run_hs    = runhaskell $(1)
+run_julia = julia $(1)
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
