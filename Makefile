@@ -18,6 +18,7 @@ run_pl    = perl $(1)
 run_swift = swift $(1)
 run_hs    = runhaskell $(1)
 run_julia = julia $(1)
+run_ss    = tinyscheme $(1)
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
