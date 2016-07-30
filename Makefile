@@ -9,6 +9,9 @@ run_bas   = echo quit | bwbasic $(1) | sed '5p;d'
 run_rb    = ruby $(1)
 run_cpp   = g++ $(1) -o $(2) && ./$(2)
 run_rs    = rustc $(1) && ./$(2)
+# run_s
+# run_erl
+run_java  = javac $(1) && ( java $(2); rm $(2).class )
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
@@ -28,10 +31,12 @@ $(basename $(1)): $(1)
 endif
 endef
 
-.PHONY: all
-.PHONY: $(TARGETS)
+.PHONY: all clean
 
-all: $(TARGETS)
+all: clean $(TARGETS)
+
+clean: $(TARGETS)
+	@ rm -f $?
 
 $(foreach source,$(SOURCES),$(eval $(call template_rule,$(source))))
 
