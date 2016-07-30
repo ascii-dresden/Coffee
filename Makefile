@@ -14,6 +14,7 @@ run_rs    = rustc $(1) && ./$(2)
 run_java  = javac $(1) && ( java $(2); rm $(2).class )
 run_lua   = lua $(1)
 run_js    = node $(1)
+run_pl    = perl $(1)
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
