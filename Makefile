@@ -9,7 +9,7 @@ run_bas   = echo quit | bwbasic $(1) | sed '5p;d'
 run_rb    = ruby $(1)
 run_cpp   = g++ $(1) -o $(2) && ./$(2)
 run_rs    = rustc $(1) && ./$(2)
-# run_s
+run_s     = gcc $(1) -o $(2) && ./$(2)
 # run_erl
 run_java  = javac $(1) && ( java $(2); rm $(2).class )
 run_lua   = lua $(1)
@@ -25,7 +25,7 @@ run_py    = python3 ${1}
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
-#  
+#
 define template_rule =
 ifdef run_$(1:$(basename $(1)).%=%)
 $(basename $(1)): ext = $(1:$(basename $(1)).%=%)

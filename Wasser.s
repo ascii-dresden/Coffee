@@ -1,16 +1,17 @@
 # Die Grundlage für jedes Getränk
-section .data
-msg     db      'Heisses Wasser!', 0AH
-len     equ     $-msg
- 
-section .text
-global  _start
-_start: mov     edx, len
-        mov     ecx, msg
-        mov     ebx, 1
-        mov     eax, 4
-        int     80h
- 
-        mov     ebx, 0
-        mov     eax, 1
-        int     80h
+.LC0:
+        .string "Heisses Wasser\n"
+        .section        .text.startup,"ax",@progbits
+        .globl  main
+main:
+        .cfi_startproc
+        subq    $8, %rsp
+        .cfi_def_cfa_offset 16
+        movl    $.LC0, %edi
+        xorl    %eax, %eax
+        call    printf
+        xorl    %eax, %eax
+        popq    %rdx
+        .cfi_def_cfa_offset 8
+        ret
+        .cfi_endproc
