@@ -21,6 +21,7 @@ run_julia = julia $(1)
 run_ss    = tinyscheme $(1)
 run_c     = gcc $(1) -o $(2) && ./$(2)
 run_go    = go run $(1)
+run_py    = python3 ${1}
 
 # creates rules like
 #  Filterkaffee: Filterkaffee.bas
