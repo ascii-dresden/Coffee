@@ -40,14 +40,17 @@ $(basename $(1)): $(1)
 endif
 endef
 
-.PHONY: all clean
+.PHONY: all clean me a an one two new fresh
 
 all: clean $(TARGETS)
 
-clean: $(TARGETS)
-	@ rm -f $?
+clean new fresh:
+	@ rm -f $(TARGETS)
 
 $(foreach source,$(SOURCES),$(eval $(call template_rule,$(source))))
+
+me a an one two:
+	@ #
 
 %:
 	@ echo "I don't know how to make $@."
