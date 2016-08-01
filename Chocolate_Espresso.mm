@@ -1,4 +1,8 @@
+#import <Foundation/Foundation.h>
+
 // die dunkle Variante von swift
-int main() {
-    NSLog(@"Chocolate Espresso - 1,00€");
+int main()
+{
+    printf("Chocolate Espresso - 1,00€\n");
 }
+
