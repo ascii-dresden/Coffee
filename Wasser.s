@@ -1,17 +1,16 @@
 # Die Grundlage für jedes Getränk
-.LC0:
-        .string "Heisses Wasser\n"
-        .section        .text.startup,"ax",@progbits
-        .globl  main
-main:
-        .cfi_startproc
-        subq    $8, %rsp
-        .cfi_def_cfa_offset 16
-        movl    $.LC0, %edi
-        xorl    %eax, %eax
-        call    printf
-        xorl    %eax, %eax
-        popq    %rdx
-        .cfi_def_cfa_offset 8
-        ret
-        .cfi_endproc
+.section	.text
+
+.global		_start
+
+ingredients:
+	.string "Heißes Wasser\n"
+
+_start:
+	mov $4, %eax
+	mov $1, %ebx
+	mov $ingredients, %ecx
+	mov $15, %edx
+	int $0x80
+	mov $1, %eax
+	int $0x80
