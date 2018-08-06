@@ -1,2 +1,8 @@
 // Hippe neue Variante von Objective-C
-print("White Chocolate Espresso - 1,00€")
+
+func nameWith(price: String) -> String {
+    return "White Chocolate Espresso - \(price)"
+}
+
+let description = nameWith(price: "1,00€")
+print(description)

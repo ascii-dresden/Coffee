@@ -1,8 +1,14 @@
+// Kaffee, Milch (50/50)
+
 package main
 
 import "fmt"
 
-// Kaffee, Milch (50/50)
+func nameWithPrice(price string) string {
+	return "Melange - " + price
+}
+
 func main() {
-	fmt.Println("Melange - 1,00€")
+	description := nameWithPrice("1,00€")
+	fmt.Println(description)
 }
