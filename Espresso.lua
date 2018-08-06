@@ -1,2 +1,8 @@
 -- Original Espresso
-print("Espresso - 0,80€")
+
+function NameWithPrice(price)
+    return "Espresso - " .. price
+end
+
+local description = NameWithPrice("0,80€")
+print(description)
