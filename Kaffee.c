@@ -1,8 +1,22 @@
-#include<stdio.h>
-
 // Kaffee, einfach Kaffee
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char* nameWithPrice(const char* price)
+{
+  char *name = "Kaffee - ";
+  char *description = malloc(strlen(name) + strlen(price) + 1);
+  strcpy(description, name);
+  strcat(description, price);
+  return description;
+}
+
 int main()
 {
-  printf("Kaffee - 0,80€\n");
+  char* description = nameWithPrice("0,80€");
+  printf("%s\n", description);
+  free(description);
   return 0;
 }
