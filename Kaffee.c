@@ -3,6 +3,6 @@
 // Kaffee, einfach Kaffee
 int main()
 {
-  printf("Kaffee - 0,80€\n");
+  printf("Kaffee - 1,00€\n");
   return 0;
 }

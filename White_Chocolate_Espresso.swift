@@ -1,2 +1,2 @@
 // Hippe neue Variante von Objective-C
-print("White Chocolate Espresso - 1,00€")
+print("White Chocolate Espresso - 1,50€")
