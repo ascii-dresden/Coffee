@@ -1,2 +1,2 @@
 // Macht nicht wach, aber glücklich
-console.log("White Chocolate - 1,00€")
+console.log("White Chocolate - 1,50€")

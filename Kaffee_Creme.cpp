@@ -4,6 +4,6 @@
 // dafür stärker
 int main()
 {
-  std::cout << "Kaffee Crème - 0,80€" << std::endl;
+  std::cout << "Kaffee Crème - 1,00€" << std::endl;
   return 0;
 }

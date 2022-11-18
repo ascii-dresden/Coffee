@@ -2,6 +2,6 @@
 // und das werden wir auch weiterhin trinken!"
 class Milchkaffee{
   public static void main(String[] args){
-    System.out.println("Milchkaffee - 1,00€");
+    System.out.println("Milchkaffee - 1,50€");
   }
 }

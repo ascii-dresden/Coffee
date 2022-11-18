@@ -1,3 +1,3 @@
 ;; Espresso, noch kleiner
-(display "Ristretto - 0,80€")
+(display "Ristretto - 1,00€")
 (newline)
